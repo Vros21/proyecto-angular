@@ -1,0 +1,307 @@
+/* 
+ESTE ARCHIVO CSS HA SIDO INSERTADO MANUALMENTE EN LA APLICACIÓN EN ESTA CARPETA NUEVA.
+PARA ELLO, HEMOS TENIDO QUE IR AL ARCHIVO ANGULAR.JSON Y MODIFICAR LA RUTA DE STYLES [], BORRAR LA ANTERIOR RUTA, PONER LA RUTA NUEVA DE ESTE ARCHIVO Y BORRAR EL ARCHIVO ANTIGUO, QUE ESTABA DENTRO DE LA CARPETA APP
+*/
+
+/* IMPORTAR FUENTES CUSTOMIZADAS*/
+@font-face {
+  font-family: "yanone";
+  src: url(fonts/YanoneKaffeesatz-Light.ttf);
+}
+
+@font-face {
+  font-family: "finger";
+  src: url(fonts/FingerPaint-Regular.ttf);
+}
+
+/* ESTILOS GENERALES */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "yanone", Arial, Helvetica;
+  font-size: 20px;
+  background: url("../img/pattern.png");
+  background-attachment: fixed;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+/* CABECERA */
+header {
+  width: 100%;
+  background: rgba(53, 103, 164, 0.8);
+  display: block;
+  position: fixed;
+  text-transform: uppercase;
+}
+
+header ul {
+  display: block;
+  text-align: center;
+  height: inherit;
+  margin: 0px auto;
+}
+
+header ul li {
+  display: inline-block;
+  /* margin: 0px auto; */
+  text-align: center;
+  line-height: 88px;
+  margin-top: -6px;
+}
+
+header a {
+  display: block;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: inherit;
+  text-decoration: none;
+  color: white;
+  transition: all 300ms;
+}
+
+header a:hover,
+.activated {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* LOGOTIPO */
+#logo {
+  font-family: "yanone";
+  font-size: 50px;
+  margin: 5px;
+  padding-top: -20px;
+}
+
+#logo a {
+  transition: color 500ms, transform 500ms;
+}
+
+#logo a:hover {
+  background: transparent;
+  color: black;
+  transform: scale(1.5, 1.5);
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+#content {
+  min-height: 800px;
+  height: auto;
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 40px black;
+  border-left: 1px solid #b7b7b7;
+  background: rgba(255, 255, 255, 0.7);
+  padding-top: 120px;
+}
+
+/* FOOTER */
+
+footer {
+  width: 75%;
+  margin: 0px auto;
+  padding-top: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* SOBRE MI */
+#title {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+
+#title h1 {
+  font-family: "finger";
+  font-size: 60px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+#title h2 {
+  font-size: 25px;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+article.about {
+  width: 70%;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+
+.about h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.about p {
+  padding-bottom: 20px;
+  padding-top: 30px;
+  text-align: justify;
+}
+
+/* FORMULARIO */
+.container {
+  padding: 50px;
+  padding-top: 10px;
+}
+
+.container .image {
+  float: left;
+  width: 49%;
+}
+
+.container .image img {
+  width: 100%;
+}
+.container .data {
+  float: left;
+  width: 47%;
+  margin-left: 30px;
+}
+
+.data > h3 {
+  margin-top: 10px;
+}
+.data > p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+form {
+  width: 80%;
+}
+
+form label {
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+input[type="number"],
+input[type="email"],
+form textarea {
+  width: 40%;
+  padding: 5px;
+}
+
+form button,
+input[type="submit"],
+.button-edit,
+.button-delete {
+  display: block;
+  font-size: 17px;
+  padding: 10px;
+  margin-top: 15px;
+  color: white;
+  background: rgba(53, 103, 164, 1);
+  border: 1px solid rgba(13, 67, 133, 1);
+  cursor: pointer;
+}
+
+.button-edit,
+.button-delete {
+  width: 20%;
+  float: left;
+  margin-right: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button-edit {
+  background: orange;
+  border: none;
+}
+
+.button-delete {
+  background: red;
+  border: none;
+}
+form button:hover,
+input[type="submit"]:hover {
+  background: rgba(53, 103, 164, 0.8);
+  border: 1px solid rgba(13, 67, 133, 1);
+}
+
+form input[disabled] {
+  opacity: 0.1;
+  cursor: not-allowed;
+}
+.form_error {
+  padding: 3px;
+  background: rgb(219, 125, 125);
+  color: white;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.message {
+  width: 50%;
+  padding: 5px;
+  border: 1px solid #eee;
+}
+
+.success {
+  background: green;
+  color: white;
+}
+
+.message a {
+  color: white;
+}
+
+.failed {
+  background: red;
+  color: white;
+}
+
+/* Página de proyectos */
+
+.project {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  justify-content: center;
+}
+.projects {
+  list-style: none;
+  flex: 0 0 49%;
+  padding-bottom: 30px;
+}
+
+.projects .image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.projects img {
+  width: 90%;
+}
+
+.project a {
+  text-decoration: none;
+  color: black;
+}

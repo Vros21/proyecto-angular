@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<header>
+  <ul>
+    <li><a [routerLink]="['/sobre-mi']" [routerLinkActive]="['activated']">Sobre mi</a></li>
+    <li><a [routerLink]="['/proyectos']" [routerLinkActive]="['activated']">Proyectos</a></li>
+    <li id="logo"><a href="#">JmViCap</a></li>
+    <li><a [routerLink]="['/crear-proyecto']" [routerLinkActive]="['activated']">Crear proyecto</a></li>
+    <li><a [routerLink]="['/contacto']" [routerLinkActive]="['activated']">Contacto</a></li>
+  </ul>
+</header>
+
+<section id="content">
+  <router-outlet></router-outlet> <!-- Permite navegar entre los componentes-->
+</section>
+
+<footer>Master en JavaScript con Victor Robles &copy;</footer>
+
+</html>
